@@ -1,0 +1,274 @@
+:root {
+    --my-padding: 0.4rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header menu  menu"
+    "hero hero hero"
+    "main main image"
+    "main main extra"
+    "banner banner banner"
+    ;
+
+    height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+
+.header {
+    align-items: center;
+    display: grid;
+    grid-area: header;
+    background-color: rgb(33, 32, 32);
+    padding: var(--my-padding);
+}
+
+.menu {
+    background-color: rgb(230, 97, 97);
+    align-items: center;
+    display: grid;
+    height: 100%;
+    grid-area: menu;
+    padding: var(--my-padding);
+    
+}
+
+.hero {
+    background-color: rgb(95, 95, 189);
+    align-items: center;
+    display: grid;
+    height: 100%;
+    grid-area: hero;
+    padding: var(--my-padding);
+}
+    
+.main {
+    background-color: brown;
+    align-items: center;
+    display: grid;
+    height: 100%;
+    grid-area: main;
+    padding: var(--my-padding);   
+} 
+
+.image {
+    background-color: lightblue;
+    align-items: center;
+    display: grid;
+    height: 100%; 
+    padding: var(--my-padding);
+}
+
+.extra {
+    background-color: green;
+    align-items: center;
+    display: grid;
+    height: 100%;
+    padding: var(--my-padding);
+}
+
+.banner {
+    background-color: orange;
+    align-items: center;
+    display: grid;
+    height: 100%;
+    grid-area: banner;
+    padding: var(--my-padding);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 0.75fr 0.5fr;
+        grid-template-rows: 0.5fr 2fr 3fr 1.5fr 0.5fr;
+        grid-template-areas: 
+        "header header  header"
+        "hero hero hero"
+        "menu main main"
+        "menu banner banner"
+        "menu extra image"
+        ;
+    
+        height: 100vh;
+        text-align: center;
+        text-transform: uppercase;
+        color: aliceblue;
+        
+    }
+    
+    .header {
+        align-items: center;
+        display: grid;
+        grid-area: header;
+        background-color: rgb(33, 32, 32);
+        padding: var(--my-padding);
+    }
+    
+    .menu {
+        background-color: rgb(230, 97, 97);
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: menu;
+        padding: var(--my-padding);
+        
+    }
+    
+    .hero {
+        background-color: rgb(95, 95, 189);
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: hero;
+        padding: var(--my-padding);
+    }
+        
+    .main {
+        background-color: brown;
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: main;
+        padding: var(--my-padding);   
+    } 
+    
+    .image {
+        background-color: lightblue;
+        align-items: center;
+        display: grid;
+        grid-area: image;
+        height: 100%; 
+        padding: var(--my-padding);
+    }
+    
+    .extra {
+        background-color: green;
+        align-items: center;
+        display: grid;
+        grid-area: extra;
+        height: 100%;
+        padding: var(--my-padding);
+        
+    }
+    
+    .banner {
+        background-color: orange;
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: banner;
+        padding: var(--my-padding);
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1.25fr 2fr 1.25fr 1.25fr 1.25fr;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "hero"
+        "main"
+        "banner"
+        "extra"
+        "image"
+        ;
+    
+        height: 100vh;
+        text-align: center;
+        text-transform: uppercase;
+        color: aliceblue;
+        
+    }
+    
+    .header {
+        align-items: center;
+        display: grid;
+        grid-area: header;
+        background-color: rgb(33, 32, 32);
+        padding: var(--my-padding);
+    }
+    
+    .menu {
+        background-color: rgb(230, 97, 97);
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: menu;
+        padding: var(--my-padding);
+        
+    }
+    
+    .hero {
+        background-color: rgb(95, 95, 189);
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: hero;
+        padding: var(--my-padding);
+    }
+        
+    .main {
+        background-color: brown;
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: main;
+        padding: var(--my-padding);   
+    } 
+    
+    .image {
+        background-color: lightblue;
+        align-items: center;
+        display: grid;
+        grid-area: image;
+        height: 100%; 
+        padding: var(--my-padding);
+    }
+    
+    .extra {
+        background-color: green;
+        align-items: center;
+        display: grid;
+        grid-area: extra;
+        height: 100%;
+        padding: var(--my-padding);
+        
+    }
+    
+    .banner {
+        background-color: orange;
+        align-items: center;
+        display: grid;
+        height: 100%;
+        grid-area: banner;
+        padding: var(--my-padding);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
